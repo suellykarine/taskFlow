@@ -1,5 +1,4 @@
 @use "./../base/variables";
-
 .report-button {
   background-color: transparent;
   border: 2px solid variables.$color-brand-purple;
@@ -92,16 +91,16 @@
   border-color: variables.$color-status-pending;
 }
 
-.status-button.andamento {
+.status-button.em-andamento {
   color: variables.$color-status-in-progress;
 }
-.status-button.andamento:hover {
+.status-button.em-andamento:hover {
   border-color: variables.$color-status-in-progress;
 }
 
-.status-button.concluido {
+.status-button.concluída {
   color: variables.$color-status-completed;
 }
-.status-button.concluido:hover {
+.status-button.concluída:hover {
   border-color: variables.$color-status-completed;
 }
