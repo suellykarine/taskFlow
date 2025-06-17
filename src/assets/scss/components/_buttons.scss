@@ -1,0 +1,107 @@
+@use "./../base/variables";
+
+.report-button {
+  background-color: transparent;
+  border: 2px solid variables.$color-brand-purple;
+  color: variables.$color-brand-purple;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.report-button:hover {
+  background-color: variables.$color-brand-purple;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(138, 35, 135, 0.2);
+}
+
+.add-task-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(
+    45deg,
+    variables.$color-brand-purple,
+    variables.$color-brand-red
+  );
+  color: variables.$color-bg-container;
+  border: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px 0 rgba(233, 64, 87, 0.3);
+}
+
+.add-task-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px 0 rgba(233, 64, 87, 0.4);
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: variables.$color-text-muted;
+  padding: 5px;
+
+  transition: all 0.25s ease-in-out;
+}
+
+.delete-btn:hover {
+  color: variables.$color-danger-hover;
+
+  transform: scale(1.25) rotate(15deg);
+}
+
+.status-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.status-button {
+  background-color: variables.$color-bg-button-light;
+  border: 1px solid variables.$color-border-light;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.status-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.status-button.pendente {
+  color: variables.$color-status-pending;
+}
+.status-button.pendente:hover {
+  border-color: variables.$color-status-pending;
+}
+
+.status-button.andamento {
+  color: variables.$color-status-in-progress;
+}
+.status-button.andamento:hover {
+  border-color: variables.$color-status-in-progress;
+}
+
+.status-button.concluido {
+  color: variables.$color-status-completed;
+}
+.status-button.concluido:hover {
+  border-color: variables.$color-status-completed;
+}

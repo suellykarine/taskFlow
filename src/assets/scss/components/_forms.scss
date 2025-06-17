@@ -1,0 +1,21 @@
+@use "../base/variables";
+.task-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.task-form input[type="text"] {
+  flex-grow: 1;
+  padding: 0.9rem;
+  border: 1px solid variables.$color-border-medium;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.task-form input[type="text"]:focus {
+  outline: none;
+  border-color: variables.$color-brand-purple;
+  box-shadow: 0 0 0 3px rgba(138, 35, 135, 0.1);
+}
