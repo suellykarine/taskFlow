@@ -1,4 +1,4 @@
-import type { Task, TaskStatus } from "../types";
+import type { Task, TasksReport, TaskStatus } from "../types";
 
 import initialTasks from "../data/tasks";
 
@@ -52,5 +52,52 @@ export const deleteTask = (taskId: number): Promise<{}> => {
     setTimeout(() => {
       resolve({});
     }, SIMULATED_DELAY);
+  });
+};
+
+export const getTasksReport = (): Promise<TasksReport> => {
+  const tarefasConcluidas = tasks.filter((t) => t.status === "Concluída");
+  const tarefasPendentes = tasks.filter((t) => t.status === "Pendente");
+  const tarefasEmAndamento = tasks.filter((t) => t.status === "Em Andamento");
+
+  const dynamicReport: TasksReport = {
+    "quantidade total de tarefas": tasks.length,
+    "tarefas concluidas": {
+      quantidade: tarefasConcluidas.length,
+
+      tarefas: tarefasConcluidas.map((t) => ({
+        tarefa_id: t.id,
+        descricao: t.description,
+        status: t.status.toLowerCase(),
+        data_criacao: new Date().toISOString(),
+        data_conclusao: new Date().toISOString(),
+      })),
+    },
+    "tarefas pendentes": {
+      quantidade: tarefasPendentes.length,
+      tarefas: tarefasPendentes.map((t) => ({
+        tarefa_id: t.id,
+        descricao: t.description,
+        status: t.status.toLowerCase(),
+        data_criacao: new Date().toISOString(),
+        data_conclusao: null,
+      })),
+    },
+    "tarefas em andamento": {
+      quantidade: tarefasEmAndamento.length,
+      tarefas: tarefasEmAndamento.map((t) => ({
+        tarefa_id: t.id,
+        descricao: t.description,
+        status: t.status.toLowerCase(),
+        data_criacao: new Date().toISOString(),
+        data_conclusao: null,
+      })),
+    },
+  };
+
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(dynamicReport);
+    }, 500);
   });
 };
