@@ -75,7 +75,10 @@ O projeto segue uma arquitetura de componentes bem definida para promover a sepa
 
 ## 🔌 API Backend
 
-Este projeto foi desenhado para consumir uma API backend desenvolvida em **Python/Django**. Atualmente, o front-end está operando com uma **API mocado** (`/src/services/api.ts`) para permitir o desenvolvimento e teste independentes da interface. A integração com a API real seria o próximo grande passo, substituindo as funções mocadas por chamadas de rede reais.
+Este projeto foi desenhado para consumir uma API backend desenvolvida em **Python/Django**. Atualmente, o front-end está operando com uma **API mocado** para permitir o desenvolvimento e teste independentes da interface. A integração com a API real seria o próximo grande passo, substituindo as funções mocadas por chamadas de rede reais.
+
+### API a ser implentada
+https://github.com/suellykarine/api-task-flow
 
 ---
 
