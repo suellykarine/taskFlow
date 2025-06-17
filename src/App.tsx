@@ -1,3 +1,4 @@
+import { Header } from "./components/Header";
 import { TaskForm } from "./components/TaskForm";
 import { TaskList } from "./components/TaskList";
 import { useTasks } from "./Hooks/useTasks";
@@ -12,7 +13,14 @@ function App() {
   };
 
   if (isLoading) {
-    return <div className="container">Carregando TaskFlow...</div>;
+    return (
+      <div
+        className="container"
+        style={{ textAlign: "center", paddingTop: "4rem" }}
+      >
+        <h1 className="gradient-text">Carregando TaskFlow...</h1>
+      </div>
+    );
   }
 
   if (isError) {
@@ -23,10 +31,7 @@ function App() {
 
   return (
     <main className="container">
-      <header>
-        <h1 className="gradient-text">TaskFlow</h1>
-        <button className="report-button">Relatório</button>
-      </header>
+      <Header />
 
       <TaskForm onAddTask={addTask} />
 

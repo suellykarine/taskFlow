@@ -13,7 +13,7 @@ export const TaskForm = ({ onAddTask }: TaskFormProps) => {
       <form className="task-form" onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Ex: Estilizar a aplicação com SASS..."
+          placeholder="Digite sua tarefa"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           required

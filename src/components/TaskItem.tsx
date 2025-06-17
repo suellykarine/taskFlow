@@ -1,3 +1,4 @@
+import { FiTrash2 } from "react-icons/fi";
 import type { Task, TaskStatus } from "../types";
 
 interface TaskItemProps {
@@ -9,7 +10,7 @@ interface TaskItemProps {
 const statusDetails: Record<TaskStatus, { text: string; icon: string }> = {
   Pendente: { text: "Pendente", icon: "⌛" },
   "Em Andamento": { text: "Andamento", icon: "⚙️" },
-  Concluída: { text: "Concluído", icon: "✅" },
+  Concluída: { text: "Concluída", icon: "✅" },
 };
 
 export const TaskItem = ({ task, onUpdateStatus, onDelete }: TaskItemProps) => {
@@ -55,7 +56,7 @@ export const TaskItem = ({ task, onUpdateStatus, onDelete }: TaskItemProps) => {
           title="Excluir tarefa"
           onClick={() => onDelete(task.id)}
         >
-          🗑️
+          <FiTrash2 />
         </button>
       </div>
     </div>
