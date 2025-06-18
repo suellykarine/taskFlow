@@ -10,8 +10,8 @@ Um gerenciador de tarefas simples e moderno, desenvolvido front-end com React, T
     * **Atualizar:** Alterar o status de uma tarefa entre `Pendente`, `Em Andamento` e `Concluída`.
     * **Deletar:** Remover tarefas da lista.
 * **Geração de Relatório:** Visualizar um resumo quantitativo de tarefas pendentes e concluídas em uma janela modal.
-* **Interface Reativa:** As atualizações na lista de tarefas são refletidas na tela instantaneamente, usando técnicas de atualização otimista para uma melhor experiência do usuário.
-* **Design Moderno:** Interface limpa com efeitos de degradê e animações sutis para uma interação agradável.
+* **Interface Reativa:** 
+* **Design Moderno:** 
 
 ---
 
@@ -19,13 +19,12 @@ Um gerenciador de tarefas simples e moderno, desenvolvido front-end com React, T
 
 Este projeto foi construído com as seguintes tecnologias no front-end:
 
-* **[React](https://react.dev/)**: Biblioteca principal para a construção da interface de usuário.
-* **[TypeScript](https://www.typescriptlang.org/)**: Para adicionar tipagem estática e segurança ao código JavaScript.
-* **[Vite](https://vitejs.dev/)**: Ferramenta de build extremamente rápida para o desenvolvimento.
-* **[SASS/SCSS](https://sass-lang.com/)**: Pré-processador CSS para estilos mais organizados e poderosos.
-* **[TanStack Query (React Query)](https://tanstack.com/query/latest)**: Para gerenciamento de estado do servidor, cache, re-fetching e mutações de forma eficiente.
-* **[React Icons](https://react-icons.github.io/react-icons/)**: Para a utilização de ícones consistentes e de alta qualidade na interface.
-
+* **[React](https://react.dev/)**
+* **[TypeScript](https://www.typescriptlang.org/)**
+* **[Vite](https://vitejs.dev/)**
+* **[SASS/SCSS](https://sass-lang.com/)**
+* **[TanStack Query (React Query)](https://tanstack.com/query/latest)**
+* **[React Icons](https://react-icons.github.io/react-icons/)**
 ---
 
 ## 🏁 Começando
@@ -81,4 +80,11 @@ Este projeto foi desenhado para consumir uma API backend desenvolvida em **Pytho
 https://github.com/suellykarine/api-task-flow
 
 ---
+
+### Front End
+
+![image](https://github.com/user-attachments/assets/7679bd2e-5bd5-4aef-a1d8-42ab7b8ef5b2)
+![image](https://github.com/user-attachments/assets/a92b0ebd-13ed-4809-b010-1a75cee80a10)
+![image](https://github.com/user-attachments/assets/bf138196-265f-466a-a773-3261dbdebf41)
+
 
